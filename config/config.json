@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "home-dev-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/homeDev/HomeDevWebPart.js",
+          "manifest": "./src/webparts/homeDev/HomeDevWebPart.manifest.json"
+        }
+      ]
+    },
+    "react-datatable-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactDatatable/ReactDatatableWebPart.js",
+          "manifest": "./src/webparts/reactDatatable/ReactDatatableWebPart.manifest.json"
+        }
+      ]
+    }
+
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReactDatatableWebPartStrings": "lib/webparts/reactDatatable/loc/{locale}.js",
+    "HomeDevWebPartStrings": "lib/webparts/homeDev/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
